@@ -25,6 +25,7 @@
     "index.d.ts"
   ],
   "scripts": {
+    "postinstall": "siroc build && yarn build:types",
     "build": "siroc build && yarn build:types",
     "build:types": "./scripts/types.sh",
     "bump-next": "jiti ./scripts/bump-next",
